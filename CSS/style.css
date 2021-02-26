@@ -1,0 +1,766 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.clr{
+    clear: both;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+/*=========== navbar part goes here ========*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:999;
+}
+.header{
+    display: flex;
+}
+.logo{
+    width: 300px;
+}
+.navber{
+    width: 640px;
+    text-align: right;
+}
+.logo img{
+    padding-top: 15px;
+}
+.navber ul li{
+    display: inline-block;
+}
+.navber ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    padding-left: 25px;
+    line-height: 72px;
+}
+.navber ul li a:hover{
+    color: #00e0d0;
+}
+/*=========== Banner part goes here ========*/
+#banner{
+    background: url(../images/Banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 172px;
+    padding-bottom: 56px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(45, 39, 75, 0.85);
+    width: 100%;
+    height: 100%;
+}
+.banner-text{
+    position: relative;
+    z-index: 99;
+    text-align: center;
+}
+.banner-text h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding-bottom: 37px;
+    position: relative;
+}
+.banner-text h2::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: #00e0d0;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 0 118px;
+    padding-bottom: 43px;
+}
+.banner-text a{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00e0d0;
+    text-transform: uppercase;
+    padding: 9px 13px;
+    border: 1px solid #00e0d0;
+}
+.circle{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 444px;
+    padding-top: 108px;
+}
+.banner-text .one{
+    width: 9px;
+    height: 9px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+.banner-text .one:hover{
+    background-color: #00e0d0;
+}
+/*=========== Story part goes here ========*/
+#story{
+    padding-top: 55px;
+    padding-bottom: 68px;
+}
+.story-item {
+    display: flex;
+}
+.story-text {
+    width: 540px;
+}
+.story-img {
+    width: 400px;
+    text-align: center;
+}
+
+.story-text h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    text-transform: uppercase;
+    margin-top: -8px;
+    padding-bottom: 11px;
+}
+.story-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #413d4b;
+    padding-right: 27px;
+    padding-bottom: 15px;
+}
+.story-text span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #413d4b;
+    padding-right: 27px;
+}
+.body-text{
+    padding-bottom: 31px;
+}
+.story-text a{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00e0d0;
+    text-transform: uppercase;
+    padding: 9px 13px;
+    border: 1px solid #00e0d0;
+}
+/*=========== Story-video part goes here ========*/
+.story-banner {
+    background: url(../images/Story.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 202px;
+    padding-bottom: 198px;
+}
+.story-banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(45, 39, 75, 0.85);
+    width: 100%;
+    height: 100%;
+}
+.story-content{
+    text-align: center;
+}
+.story-content img{
+    position: relative;
+    z-index: 99999;
+    padding-bottom: 27px;
+}
+.story-content h3{
+    position: relative;
+    z-index: 999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+}
+/*=========== Expertise part goes here ========*/
+.head{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 82px;
+}
+.head h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    text-transform: uppercase;
+}
+.head p{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #413d4b;
+    position: relative;
+    padding-top: 4px;
+}
+.head p::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c6c4c9;
+}
+.Expertise-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Expertise-item{
+    width: 300px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.Expertise-item h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #413d4b;
+    padding-top: 19px;
+}
+.Expertise-item p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333333;
+    line-height: 22px;
+    padding-top: 12px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+/*=========== team part goes here ========*/
+.team-main{
+    position: relative;
+    background: url(../images/Team-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.team-main::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(45, 39, 75, 0.85);
+    width: 100%;
+    height: 100%;
+}
+.team-content{
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    padding-bottom: 62px;
+}
+.team-head{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+.team-head h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.team-head p{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    padding-top: 4px;
+}
+.team-head p::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.20);
+}
+.team-member{
+    display: flex;
+    justify-content: space-between;
+}
+.team-item{
+    width: 220px;
+    text-align: center;
+}
+.team-item h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+.team-item p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.70);
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+
+.team-text{
+    width: 220px;
+    height: 78px;
+    border: 1px solid rgba(230, 230, 230, 0.5);
+    margin-top: -4px;
+}
+.team-last p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #f3f3f3;
+    padding-top: 53px;
+    padding-bottom: 30px;
+}
+.team-last a{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00e0d0;
+    text-transform: uppercase;
+    padding: 9px 13px;
+    border: 1px solid #00e0d0;
+}
+/*=========== Gallery part goes here ========*/
+.gal-head{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 43px;
+}
+.gal-head h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    text-transform: uppercase;
+}
+.gal-head p{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #413d4b;
+    position: relative;
+    padding-top: 4px;
+}
+.gal-head p::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c6c4c9;
+}
+.gal-img{
+    padding-top: 50px;
+    padding-bottom: 63px;
+}
+.gal-tag{
+    text-align: center;
+}
+.gal-tag a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #413d4b;
+    text-transform: capitalize;
+    padding: 3px 6px;
+    border: 1px solid #ddd;
+    margin: 0 3px;
+}
+.gal-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gal-item{
+    width: 16.6666%;
+    margin: -2px 0;
+}
+.gal-last{
+    text-align: center;
+    padding-bottom: 63px;
+}
+
+.gal-last a{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00e0d0;
+    text-transform: uppercase;
+    padding: 9px 13px;
+    border: 1px solid #00e0d0;
+}
+/*=========== ceo part goes here ========*/
+.ceo-main{
+    position: relative;
+    background: url(../images/CEO-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ceo-main::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(45, 39, 75, 0.85);
+    width: 100%;
+    height: 100%;
+}
+.ceo-content{
+    position: relative;
+    text-align: center;
+    z-index: 999;
+    padding-top: 58px;
+    padding-bottom: 60px;
+}
+.ceo-content h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: -38px;
+}
+.ceo-content p{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 26px;
+}
+.ceo-content h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 1px;
+}
+.ceo-content h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+}
+.ceo-circle {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 424px;
+}
+.ceo-circle .one{
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+.ceo-circle .two{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #00e0d0;
+    transition: all linear .3s;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+}
+.ceo-circle .two:hover{
+    opacity: 1;
+}
+/*=========== logo part goes here ========*/
+.logo-main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 52px;
+}
+.logo-form{
+    width: 460px;
+}
+.logo-icon{
+    width: 380px;
+}
+.logo-form h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    text-transform: uppercase;
+    padding-bottom: 22px;
+}
+.logo-form form input{
+    padding-left: 13px;
+    border: 1px solid #e5e5e5;
+    line-height: 34px;
+    width: 458px;
+    margin-bottom: 18px;
+}
+.logo-form form textarea{
+    padding-left: 13px;
+    border: 1px solid #e5e5e5;
+    line-height: 34px;
+    width: 458px;
+    margin-bottom: 18px;
+    height: 163px;
+}
+.logo-form form input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #413d4b;
+    text-transform: capitalize;
+}
+.logo-form form textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #413d4b;
+    text-transform: capitalize;
+}
+.logo-form form button{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00e0d0;
+    text-transform: uppercase;
+    padding: 9px 26px;
+    border: 1px solid #00e0d0;
+    background-color: #fff;
+}
+.logo-icon h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    text-transform: uppercase;
+    padding-bottom: 28px;
+}
+.logo-img{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-item1{
+    width: 162px;
+    text-align: center;
+}
+.logo-item2{
+    width: 138px;
+    text-align: center;
+}
+.logo-item1 img{
+    padding-bottom: 29px;
+}
+.logo-item2 img{
+    padding-bottom: 29px;
+}
+/*=========== footer part goes here ========*/
+.footer-main{
+    position: relative;
+    background: url(../images/Footer-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer-main::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba(45, 39, 75, 0.85);
+    width: 100%;
+    height: 100%;
+}
+.footer-logo{
+    width: 262px;
+}
+.footer-studio{
+    width: 270px;
+}
+.footer-touch{
+    width: 290px;
+}
+.footer-content{
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 53px;
+}
+.footer-logo p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 26px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 54px;
+}
+.footer-logo .footer-logo-last{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo .footer-logo-last h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+.studio-head h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 18px;
+    padding-bottom: 24px;
+}
+.studio-item{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 5px;
+}
+.studio-item i{
+    width: 30px;
+    color: #fff;
+    font-size: 19px;
+    padding-top: 5px;
+}
+.studio-item p{
+    width: 240px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 26px;
+}
+.touch-head h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 18px;
+    padding-bottom: 32px;
+}
+.subscribe{
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe p{
+    width: 209px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+.subscribe a i{
+    font-size: 23px;
+    color: black;
+    width: 70px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    line-height: 45px;
+}
+.social-icon{
+    padding-top: 19px;
+}
+.social-icon a{
+    padding-right: 5px;
+}
+.social-icon a i{
+    font-size: 15px;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 35px;
+}
+.copy-right{
+    text-align: right;
+    padding-top: 55px;
+}
+.copy-right span{
+    width: 240px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
